@@ -1,0 +1,30 @@
+﻿
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image {
+    float: left;
+    margin-right: 20px;
+}
+
+.content {
+    overflow: hidden; /* Clear the float */
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+    padding: 20px 0;
+}
+
+

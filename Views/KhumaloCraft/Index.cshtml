@@ -1,0 +1,31 @@
+﻿@Model IEnumerable<KhumaloCraft Emporiam.Models.Products>
+    <style>
+        .card {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+<div class="container mt-3">
+    <div class="row">
+            @foreach(var product in Model)
+            {
+                <div class="col-se-4">
+                    <div class="card">
+                        <img src="@product.ImageUrl" class="card-img-top" alt="@product.Name" />
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text">@product.Description</p>
+                            <h5 class="text-muted">Price:@product.Price.ToString("C")</h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            }
+
+    </div>
+
+</div>
